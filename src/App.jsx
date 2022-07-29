@@ -62,8 +62,6 @@ function App() {
     setUserIsActive(!userIsActive)
   }
 
-  //Este es el cambio prueb
-
   return (
     <div className="App">
       <Header
@@ -73,6 +71,9 @@ function App() {
         <h2>Quotes</h2>
       </div>
       <div className="quotes-box">
+        <Quotes
+          quote={randomQuote}
+        />
         <Quotes
           quote={randomQuote}
         />
