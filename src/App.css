@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #eaf2ff;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend', sans-serif;
+    position: relative;
+}
+
+
+/* --------- HEADER ------------*/
+
+.Header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
+}
+
+.header-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 12% 8% 8% 0;
+}
+
+.header-button-img{
+    background-color: #fff;
+    border:none;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.header-button-img img{
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    padding: 0;
+    margin: 0;
+}
+
+.header-button-search{
+    background-color: #eaf2ff;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 25px;
+    color: #655fb1;
+}
+/* ------- TITTLE --------- */
+
+.tittle{
+    color:#4b5288;
+    position: relative;
+    left: -30%;
+    margin-bottom: 8%;
+}
+
+/* ------ QUOTES BOX -------*/
+
+.quotes-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ------- QUOTES --------- */
+
+.Quotes{
+    width: 90%;
+    aspect-ratio: 1.2;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='300' height='300' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(116)'%3E%3Crect width='100%25' height='100%25' fill='rgba(254, 215, 226,1)'/%3E%3Cpath d='M0 39.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5v1a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5zM0-0.5a 9.5-9.5 0 0 0 9.5-9.5h1a-10.5 10.5 0 0 1-10.5 10.5zM0-0.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 0 9.5 9.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 0 9.5 9.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 1 9.5 9.5v1a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 1-9.5-9.5a-10.5-10.5 0 0 0-10.5-10.5h1a 9.5 9.5 0 0 1 9.5 9.5a 9.5 9.5 0 0 0 9.5 9.5zM40-0.5a 10.5 10.5 0 0 1 10.5 10.5h-1a-9.5-9.5 0 0 1-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 1-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5z' fill='rgba(254, 215, 226,1)'/%3E%3Cpath d='M-20 39.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5v1a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5zM-20-0.5a 9.5-9.5 0 0 0 9.5-9.5h1a-10.5 10.5 0 0 1-10.5 10.5zM-20-0.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 0 9.5 9.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 0 9.5 9.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 1 9.5 9.5v1a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 1-9.5-9.5a-10.5-10.5 0 0 0-10.5-10.5h1a 9.5 9.5 0 0 1 9.5 9.5a 9.5 9.5 0 0 0 9.5 9.5zM20-0.5a 10.5 10.5 0 0 1 10.5 10.5a 9.5 9.5 0 0 0 9.5 9.5a 10.5 10.5 0 0 1 10.5 10.5h-1a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 0-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5a-9.5-9.5 0 0 1-9.5-9.5a-10.5-10.5 0 0 1-10.5-10.5zM20 39.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5a 9.5-9.5 0 0 0 9.5-9.5a 10.5-10.5 0 0 1 10.5-10.5v1a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5a-9.5 9.5 0 0 0-9.5 9.5a-10.5 10.5 0 0 1-10.5 10.5z' fill='rgba(247, 250, 252,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+    box-sizing: border-box;
+    padding: 8%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes-content .icon-quotes{
+    color:#4b5288;
+    font-size: 40px;
+}
+.quotes-content h3{
+    margin: 0;
+    color: #4b5288;
+}
+.quotes-content h6{
+    margin: 0;
+    color: #a4adcb;
+}
+
+
+/* ------ Footer ------*/
+
+.Footer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    aspect-ratio: 6;
+    background-color: #dbe8ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+.footer-button-user-false, .footer-button-quotes-false{
+    padding: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbe8ff;
+    border: none;
+    color:#b4b8cd;
+    width: 10%;
+    margin: auto;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.footer-button-quotes-true, .footer-button-user-true{
+    width:50%;
+    height: 110%;
+    border: none;
+    background-color: #655fb1;
+    padding: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transform: translateY(-10%);
+}
+
+.footer-button-user-false:hover , .footer-button-quotes-false:hover{
+    color:#fff;
+    width: 10%;
+    height: 60%;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #655fb1;
+    border: none;
+}
